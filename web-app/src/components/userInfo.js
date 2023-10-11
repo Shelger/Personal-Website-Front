@@ -6,7 +6,7 @@ function UserInfo() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const apiUrl = 'http://localhost:8080/api/users';
+        const apiUrl = 'http://10.0.100.17:8080/api/users';
 
         axios.get(apiUrl)
                 .then(response => {
